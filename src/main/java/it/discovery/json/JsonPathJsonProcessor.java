@@ -23,6 +23,6 @@ public class JsonPathJsonProcessor implements JsonProcessor {
 
     @Override
     public String getUserName(String json) {
-        return JsonPath.parse(json).read("$.title", String.class);
+        return JsonPath.parse(json).read("$.name", String.class);
     }
 }
